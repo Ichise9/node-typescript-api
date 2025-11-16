@@ -1,0 +1,39 @@
+{
+  "name": "typescript-api",
+  "version": "1.0.0",
+  "description": "Typescript Node.js API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ichise9/node-typescript-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "api"
+  ],
+  "author": "Ichise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ichise9/node-typescript-api/issues"
+  },
+  "homepage": "https://github.com/Ichise9/node-typescript-api#readme",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "8.46.4",
+    "@typescript-eslint/parser": "^8.46.4",
+    "eslint": "9.39.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  }
+}
